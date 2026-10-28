@@ -1,15 +1,71 @@
+
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" 
-content="width=device-width, initial-
-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Página inicial de Leticia Silva para WDD 131 – Fundamentos da Web Dinâmica, com informações pessoais, estudos, edição de vídeos e recursos de desenvolvimento web.">
+    <meta name="author" content="Leticia Silva">
+
+    <title>WDD 131 – Fundamentos da Web Dinâmica - Leticia Silva</title>
+
+    <link rel="stylesheet" href="estilos/base.css">
+    <script src="scripts/obterdatas.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <span id="titulo-curso">WDD131 – Fundamentos da Web Dinâmica</span>
+
+        <nav aria-label="Navegação principal">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=por&id=p7#p7" target="_blank" rel="noopener noreferrer">Escritura favorita</a>
+            <a href="projeto-final/">Projeto final</a>
+        </nav>
+    </header>
+
+    <main>
         <h1>Leticia Silva</h1>
 
-        <p>Software Developer</p>
-   </body>
+        <div class="cards">
+            <section class="card">
+                <h2>Sobre mim</h2>
+
+                <img
+                    src="imagens/foto-leticia.jpg"
+                    alt="Foto de Leticia Silva"
+                    class="foto-perfil"
+                    width="300"
+                    height="400"
+                >
+
+                <p>Olá! Meu nome é Leticia Silva. Estou estudando desenvolvimento de software e aprendendo a criar páginas web com HTML, CSS e JavaScript.</p>
+
+                <p>Gosto de edição de vídeos, criação de conteúdo digital e design. Quero continuar desenvolvendo minhas habilidades e criar projetos úteis e criativos.</p>
+
+                <h3>Meus estudos</h3>
+
+                <p>Estou cursando o programa BYU–Pathway Worldwide e aprendendo algo novo a cada etapa.</p>
+            </section>
+
+            <section class="card">
+                <h2>Recursos de desenvolvimento web</h2>
+
+                <ul>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener noreferrer">HTML — MDN</a></li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank" rel="noopener noreferrer">CSS — MDN</a></li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">JavaScript — MDN</a></li>
+                    <li><a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anoatual"></span> Leticia Silva | Americana, São Paulo, Brasil</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+</body>
 </html>

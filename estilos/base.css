@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap');
+
+:root {
+  --cor-principal: #17324d;
+  --cor-secundaria: #315b78;
+  --cor-destaque: #f2c078;
+  --cor-fundo: #f4f6f8;
+  --cor-texto: #202a33;
+  --cor-branco: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--cor-texto);
+  background: var(--cor-fundo);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--cor-principal);
+  color: var(--cor-branco);
+}
+
+#titulo-curso {
+  display: block;
+  padding: 1.2rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background: var(--cor-secundaria);
+}
+
+nav a {
+  display: block;
+  padding: 0.9rem 1rem;
+  color: var(--cor-branco);
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  background: var(--cor-destaque);
+  color: #202a33;
+}
+
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--cor-principal);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.card {
+  padding: 1.5rem;
+  background: var(--cor-branco);
+  border: 1px solid #d7dfe5;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 8%);
+}
+
+.card h2 {
+  margin-top: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--cor-destaque);
+}
+
+.card img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 6px;
+}
+
+.foto-perfil {
+  width: 120px;
+  height: 160px;
+  object-fit: cover;
+  float: right;
+  margin: 0 0 16px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  text-align: center;
+  background: var(--cor-principal);
+  color: var(--cor-branco);
+}
+
+footer p {
+  margin: 0.4rem 0;
+}
+
+@media (max-width: 700px) {
+  #titulo-curso {
+    font-size: 1.2rem;
+  }
+
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
