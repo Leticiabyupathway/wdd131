@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Álbum de fotografias de templos de A Igreja de Jesus Cristo dos Santos dos Últimos Dias.">
+    <meta name="author" content="Letícia Silva">
+    <title>Álbum do Templo</title>
+    <link rel="stylesheet" href="estilos/templos.css">
+    <link rel="stylesheet" href="estilos/templos-grandes.css">
+    <script src="scripts/templos.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <span class="titulo-site">Álbum do Templo</span>
+            <button id="menu-button" class="menu-button" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="menu-principal">☰</button>
+        </div>
+
+        <nav id="menu-principal" class="menu-principal">
+            <a href="index.html">Página Inicial</a>
+            <a href="#antigo">Antigo</a>
+            <a href="#novo">Novo</a>
+            <a href="#grande">Grande</a>
+            <a href="#pequeno">Pequeno</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Página Inicial</h1>
+
+        <div class="galeria">
+            <figure id="antigo">
+                <img src="imagens/templo-salt-lake.png" alt="Templo de Salt Lake City, Utah" loading="lazy">
+                <figcaption>Templo de Salt Lake City</figcaption>
+            </figure>
+
+            <figure id="novo">
+                <img src="imagens/templo-san-diego.jpeg" alt="Templo de San Diego, Califórnia" loading="lazy">
+                <figcaption>Templo de San Diego, Califórnia</figcaption>
+            </figure>
+
+            <figure id="grande">
+                <img src="imagens/templo-sao-paulo.jpeg" alt="Templo de São Paulo, Brasil" loading="lazy">
+                <figcaption>Templo de São Paulo, Brasil</figcaption>
+            </figure>
+
+            <figure>
+                <img src="imagens/templo-campinas.jpg" alt="Templo de Campinas, Brasil" loading="lazy">
+                <figcaption>Templo de Campinas, Brasil</figcaption>
+            </figure>
+
+            <figure id="pequeno">
+                <img src="imagens/templo-curitiba.jpg" alt="Templo de Curitiba, Brasil" loading="lazy">
+                <figcaption>Templo de Curitiba, Brasil</figcaption>
+            </figure>
+
+            <figure>
+                <img src="imagens/templo-recife.jpg" alt="Templo de Recife, Brasil" loading="lazy">
+                <figcaption>Templo de Recife, Brasil</figcaption>
+            </figure>
+
+            <figure>
+                <img src="imagens/templo-lisboa.jpg" alt="Templo de Lisboa, Portugal" loading="lazy">
+                <figcaption>Templo de Lisboa, Portugal</figcaption>
+            </figure>
+
+            <figure>
+                <img src="imagens/templo-roma.jpg" alt="Templo de Roma, Itália" loading="lazy">
+                <figcaption>Templo de Roma, Itália</figcaption>
+            </figure>
+
+            <figure>
+                <img src="imagens/templo-paris.jpg" alt="Templo de Paris, França" loading="lazy">
+                <figcaption>Templo de Paris, França</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anoatual"></span> Leticia Silva | Americana, São Paulo, Brasil</p>
+        <p>Álbum de imagens de templos.</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+</body>
+</html>
