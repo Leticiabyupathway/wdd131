@@ -141,3 +141,11 @@ footer p {
     grid-template-columns: 1fr;
   }
 }
+.foto-cidade {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 8px;
+}
