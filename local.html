@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça Maceió, Alagoas, um paraíso de praias e águas cristalinas no Nordeste do Brasil.">
+    <meta name="author" content="Leticia Silva">
+
+    <title>Maceió, Alagoas | Paraíso das Águas</title>
+
+    <link rel="stylesheet" href="estilos/local.css">
+    <script src="scripts/local.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Maceió, Alagoas</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source
+                    srcset="imagens/maceio-pequena.webp"
+                    media="(max-width: 600px)">
+                <img
+                    src="imagens/maceio-grande.webp"
+                    alt="Vista das águas azul-turquesa das praias de Maceió"
+                    width="1100"
+                    height="733">
+            </picture>
+        </div>
+
+        <section class="dados">
+            <h2>Dados</h2>
+            <p><strong>País:</strong> Brasil</p>
+            <p><strong>Estado:</strong> Alagoas</p>
+            <p><strong>Capital do estado:</strong> Maceió</p>
+            <p><strong>Idioma:</strong> Português</p>
+            <p><strong>Moeda:</strong> Real (R$)</p>
+        </section>
+
+        <section class="clima">
+            <h2>Clima</h2>
+
+            <div class="icone-clima">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 100 100"
+                     role="img"
+                     aria-label="Sol parcialmente encoberto por uma nuvem">
+
+                    <circle cx="38" cy="35" r="18" fill="#ffc107"/>
+
+                    <path d="M28 70
+                             C15 70 12 55 22 48
+                             C25 35 43 32 52 43
+                             C65 38 78 48 76 60
+                             C90 65 83 80 70 80
+                             H30
+                             C20 80 18 70 28 70Z"
+                          fill="#43c6c9"/>
+                </svg>
+            </div>
+
+            <p><strong>Temperatura:</strong> <span id="temperatura">28 °C</span></p>
+            <p><strong>Condições:</strong> Parcialmente nublado</p>
+            <p><strong>Velocidade do vento:</strong> <span id="vento">12 km/h</span></p>
+            <p><strong>Sensação térmica:</strong> <span id="sensacao">Calculando...</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="ano"></span> | Leticia Silva | Brasil</p>
+        <p>Última modificação: <span id="modificado"></span></p>
+    </footer>
+
+</body>
+</html>

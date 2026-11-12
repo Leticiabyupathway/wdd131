@@ -1,0 +1,138 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+:root {
+    --cor-azul: #087e9b;
+    --cor-turquesa: #43c6c9;
+    --cor-areia: #fff5df;
+    --cor-texto: #263238;
+    --cor-branco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor-texto);
+    background-color: var(--cor-areia);
+    line-height: 1.6;
+}
+
+/* CABEÇALHO */
+
+header {
+    background-color: var(--cor-azul);
+    color: var(--cor-branco);
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* IMAGEM PRINCIPAL */
+
+.hero {
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* SEÇÕES */
+
+section {
+    background-color: var(--cor-branco);
+    margin: 20px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+section h2 {
+    color: var(--cor-azul);
+    border-bottom: 3px solid var(--cor-turquesa);
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+}
+
+section p {
+    margin: 8px 0;
+}
+
+/* ÍCONE DO CLIMA */
+
+.icone-clima {
+    margin: 10px 0;
+}
+
+.icone-clima svg {
+    width: 65px;
+    height: 65px;
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: var(--cor-azul);
+    color: var(--cor-branco);
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* VISUALIZAÇÃO PARA COMPUTADORES */
+
+@media screen and (min-width: 700px) {
+
+    header h1 {
+        font-size: 2.8rem;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .hero img {
+        height: 600px;
+        object-fit: cover;
+    }
+
+    main section {
+        position: absolute;
+        width: 280px;
+        margin: 0;
+    }
+
+    .dados {
+        top: 40px;
+        left: 30px;
+    }
+
+    .clima {
+        top: 40px;
+        right: 30px;
+    }
+
+    .icone-clima {
+        display: none;
+    }
+
+    .clima h2::after {
+        content: " ⛅";
+    }
+
+    footer {
+        margin-top: 0;
+    }
+}
