@@ -53,10 +53,14 @@ header {
     border-radius: 4px;
 }
 
-.menu-principal {
-    display: none;
+nav {
+    display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+.menu-principal {
+    display: none;
 }
 
 .menu-principal.aberto {
