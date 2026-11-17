@@ -1,0 +1,35 @@
+
+@media screen and (min-width: 38rem) {
+    .cabecalho {
+        justify-content: center;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .menu-principal,
+    .menu-principal.aberto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .cartao-templo h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 64rem) {
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

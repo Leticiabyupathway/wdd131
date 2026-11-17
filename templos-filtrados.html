@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Álbum interativo de fotografias de templos de A Igreja de Jesus Cristo dos Santos dos Últimos Dias.">
+    <meta name="author" content="Letícia Silva">
+    <title>Álbum de Templos Filtrados</title>
+    <link rel="icon" href="data:,">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/templos-filtrados.css">
+    <link rel="stylesheet" href="estilos/templos-filtrados-grandes.css">
+
+    <script src="scripts/templos-filtrados.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <span class="titulo-site">Álbum do Templo</span>
+            <button id="menu-button" class="menu-button" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="menu-principal">☰</button>
+        </div>
+
+        <nav id="menu-principal" class="menu-principal">
+            <a href="#inicio" id="inicio">Página Inicial</a>
+            <a href="#antigos" id="antigos">Antigos</a>
+            <a href="#novos" id="novos">Novos</a>
+            <a href="#grandes" id="grandes">Grandes</a>
+            <a href="#pequenos" id="pequenos">Pequenos</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Página Inicial</h1>
+
+        <div class="galeria" id="galeria"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anoatual"></span> Letícia Silva | Americana, São Paulo, Brasil</p>
+        <p>Álbum de imagens de templos.</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+</body>
+</html>
