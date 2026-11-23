@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Planejamento do site Descubra Maceió, um guia turístico sobre praias, atrações e dicas de viagem em Maceió, Alagoas.">
+    <meta name="author" content="Leticia Silva">
+    <title>Planejamento do Site | Descubra Maceió</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --azul: #006b78;
+            --areia: #f7eedc;
+            --branco: #ffffff;
+            --texto: #263238;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--areia);
+            color: var(--texto);
+            font-family: "Open Sans", sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--azul);
+            color: var(--branco);
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        h1, h2, h3 {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            color: var(--azul);
+            border-bottom: 2px solid var(--azul);
+            padding-bottom: 0.5rem;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background-color: var(--branco);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .paleta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .cor {
+            flex: 1 1 200px;
+            padding: 1rem;
+            border: 1px solid #777777;
+            border-radius: 8px;
+        }
+
+        .cor-azul {
+            background-color: var(--azul);
+            color: var(--branco);
+        }
+
+        .cor-areia {
+            background-color: var(--areia);
+            color: var(--texto);
+        }
+
+        .exemplo-titulo {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+        }
+
+        .exemplo-texto {
+            font-family: "Open Sans", sans-serif;
+        }
+
+        .wireframes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 2rem;
+        }
+
+        .wireframe {
+            border: 3px solid var(--texto);
+            padding: 0.8rem;
+            background-color: #eeeeee;
+            color: var(--texto);
+            text-align: center;
+        }
+
+        .wireframe h3 {
+            margin: 0 0 1rem;
+        }
+
+        .mobile {
+            width: 240px;
+            max-width: 100%;
+        }
+
+        .desktop {
+            width: 550px;
+            max-width: 100%;
+        }
+
+        .bloco {
+            border: 2px dashed #555555;
+            background-color: var(--branco);
+            padding: 1rem 0.5rem;
+            margin-bottom: 0.7rem;
+            font-size: 0.9rem;
+        }
+
+        .hero {
+            min-height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .colunas {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.5rem;
+        }
+
+        .colunas .bloco {
+            min-height: 90px;
+        }
+
+        .rodape {
+            margin-bottom: 0;
+        }
+
+        footer {
+            background-color: var(--azul);
+            color: var(--branco);
+            text-align: center;
+            padding: 1rem;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                margin: 1rem auto;
+            }
+
+            section {
+                padding: 1rem;
+            }
+
+            .colunas {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Descubra Maceió</h1>
+        <p>Documento de Planejamento do Site</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Nome do Site</h2>
+            <h3>Descubra Maceió — Guia Turístico</h3>
+            <p>
+                O nome "Descubra Maceió" foi escolhido porque representa
+                o objetivo de apresentar as belezas naturais, as praias
+                e as atrações turísticas da capital de Alagoas.
+                É um nome simples, fácil de lembrar e relacionado
+                ao turismo na região.
+            </p>
+            <p>
+                <strong>Domínio sugerido:</strong>
+                descubramaceio.com.br (disponibilidade não verificada).
+            </p>
+        </section>
+
+        <section>
+            <h2>2. Finalidade do Site</h2>
+            <p>
+                O site Descubra Maceió tem como finalidade fornecer
+                informações turísticas para pessoas que desejam
+                conhecer Maceió, Alagoas.
+            </p>
+            <p>
+                O conteúdo apresentará praias, atrações turísticas,
+                sugestões de passeios e dicas úteis para ajudar
+                os visitantes a planejar uma viagem.
+            </p>
+        </section>
+
+        <section>
+            <h2>3. Cenários</h2>
+            <p>
+                Os seguintes cenários representam perguntas
+                que o público-alvo poderá fazer:
+            </p>
+
+            <ul>
+                <li>
+                    Quais são as praias mais conhecidas de Maceió
+                    e o que posso encontrar em cada uma delas?
+                </li>
+                <li>
+                    Quais atrações turísticas e passeios posso
+                    incluir no meu roteiro de viagem?
+                </li>
+                <li>
+                    Onde posso encontrar dicas para organizar
+                    minha primeira viagem a Maceió?
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Esquema de Cores</h2>
+            <p>
+                As cores foram escolhidas para representar
+                o mar e as praias de Maceió.
+            </p>
+
+            <div class="paleta">
+                <div class="cor cor-azul">
+                    <h3>Azul-turquesa escuro</h3>
+                    <p><strong>#006B78</strong></p>
+                    <p>
+                        Usado no cabeçalho, nos títulos,
+                        nas linhas decorativas e no rodapé.
+                    </p>
+                </div>
+
+                <div class="cor cor-areia">
+                    <h3>Areia clara</h3>
+                    <p><strong>#F7EEDC</strong></p>
+                    <p>
+                        Usada como cor de fundo principal,
+                        lembrando a areia das praias.
+                    </p>
+                </div>
+            </div>
+
+            <p>
+                O branco (#FFFFFF) será usado nos cartões
+                de conteúdo, e o cinza-escuro (#263238)
+                será usado nos textos para facilitar a leitura.
+            </p>
+        </section>
+
+        <section>
+            <h2>5. Tipografia</h2>
+
+            <h3 class="exemplo-titulo">Montserrat</h3>
+            <p>
+                A fonte Montserrat será utilizada nos títulos
+                principais, subtítulos e cabeçalhos das seções.
+            </p>
+
+            <h3 class="exemplo-texto">Open Sans</h3>
+            <p class="exemplo-texto">
+                A fonte Open Sans será utilizada nos parágrafos,
+                nas listas e nas informações gerais do site.
+            </p>
+        </section>
+
+        <section>
+            <h2>6. Wireframes da Página Inicial</h2>
+            <p>
+                Os wireframes abaixo representam a estrutura
+                planejada para a página inicial em dispositivos
+                móveis e em computadores.
+            </p>
+
+            <div class="wireframes">
+                <div>
+                    <h3>Visualização Móvel</h3>
+
+                    <div class="wireframe mobile">
+                        <div class="bloco">
+                            LOGOTIPO / NOME DO SITE
+                        </div>
+
+                        <div class="bloco">
+                            MENU DE NAVEGAÇÃO
+                        </div>
+
+                        <div class="bloco hero">
+                            IMAGEM PRINCIPAL
+                        </div>
+
+                        <div class="bloco">
+                            BOAS-VINDAS / INTRODUÇÃO
+                        </div>
+
+                        <div class="bloco">
+                            PRAIA 1
+                        </div>
+
+                        <div class="bloco">
+                            PRAIA 2
+                        </div>
+
+                        <div class="bloco">
+                            PRAIA 3
+                        </div>
+
+                        <div class="bloco">
+                            DICAS DE VIAGEM
+                        </div>
+
+                        <div class="bloco rodape">
+                            RODAPÉ
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Visualização Desktop</h3>
+
+                    <div class="wireframe desktop">
+                        <div class="bloco">
+                            LOGOTIPO | INÍCIO | PRAIAS | PASSEIOS | DICAS
+                        </div>
+
+                        <div class="bloco hero">
+                            IMAGEM PRINCIPAL / DESTAQUE
+                        </div>
+
+                        <div class="bloco">
+                            BOAS-VINDAS / INTRODUÇÃO
+                        </div>
+
+                        <div class="colunas">
+                            <div class="bloco">
+                                PRAIA 1
+                            </div>
+
+                            <div class="bloco">
+                                PRAIA 2
+                            </div>
+
+                            <div class="bloco">
+                                PRAIA 3
+                            </div>
+                        </div>
+
+                        <div class="bloco">
+                            DICAS DE VIAGEM / PASSEIOS
+                        </div>
+
+                        <div class="bloco rodape">
+                            RODAPÉ
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2026 | Leticia Silva |
+            Planejamento do Site Descubra Maceió
+        </p>
+    </footer>
+</body>
+</html>
