@@ -1,7 +1,15 @@
 
 const anoAtual = new Date().getFullYear();
 
-document.querySelector("#anoatual").textContent = anoAtual;
+const elementoAno = document.querySelector("#anoatual, #currentyear");
 
-document.querySelector("#ultimaModificacao").textContent =
-  `Última modificação: ${document.lastModified}`;
+const elementoModificacao = document.querySelector("#ultimaModificacao, #lastModified");
+
+if (elementoAno) {
+    elementoAno.textContent = anoAtual;
+}
+
+if (elementoModificacao) {
+    elementoModificacao.textContent =
+        `Última modificação: ${document.lastModified}`;
+}

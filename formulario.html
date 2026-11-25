@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de avaliação de produtos, classificação e opiniões dos usuários.">
+    <meta name="author" content="Leticia Silva">
+    <title>Avaliação de Produto | WDD 131</title>
+
+    <link rel="stylesheet" href="estilos/formulario.css">
+    <script src="scripts/formulario.js" defer></script>
+    <script src="scripts/obterdatas.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Avaliação de Produto</h1>
+    </header>
+
+    <main>
+        <form method="get" action="avaliacao.html">
+
+            <p class="obrigatorio">* Campos obrigatórios</p>
+
+            <label for="produto">Nome do Produto *</label>
+            <select id="produto" name="produto" required>
+                <option value="" disabled selected>Selecione um Produto...</option>
+            </select>
+
+            <fieldset>
+                <legend>Classificação Geral *</legend>
+
+                <div class="estrelas">
+                    <label for="estrela1">
+                        ☆
+                        <input type="radio" id="estrela1" name="classificacao" value="1" required>
+                    </label>
+
+                    <label for="estrela2">
+                        ☆☆
+                        <input type="radio" id="estrela2" name="classificacao" value="2" required>
+                    </label>
+
+                    <label for="estrela3">
+                        ☆☆☆
+                        <input type="radio" id="estrela3" name="classificacao" value="3" required>
+                    </label>
+
+                    <label for="estrela4">
+                        ☆☆☆☆
+                        <input type="radio" id="estrela4" name="classificacao" value="4" required>
+                    </label>
+
+                    <label for="estrela5">
+                        ☆☆☆☆☆
+                        <input type="radio" id="estrela5" name="classificacao" value="5" required>
+                    </label>
+                </div>
+            </fieldset>
+
+            <label for="data">Data de Instalação *</label>
+            <input type="date" id="data" name="data" required>
+
+            <fieldset>
+                <legend>Quais recursos você achou úteis no produto?</legend>
+                <p class="instrucao">Marque todos que se aplicam.</p>
+
+                <label class="recurso">
+                    <input type="checkbox" id="durabilidade" name="recursos" value="durabilidade">
+                    Durabilidade
+                </label>
+
+                <label class="recurso">
+                    <input type="checkbox" id="facilidade" name="recursos" value="facilidade">
+                    Facilidade de Uso
+                </label>
+
+                <label class="recurso">
+                    <input type="checkbox" id="desempenho" name="recursos" value="desempenho">
+                    Desempenho
+                </label>
+
+                <label class="recurso">
+                    <input type="checkbox" id="design" name="recursos" value="design">
+                    Design
+                </label>
+            </fieldset>
+
+            <label for="avaliacao">
+                Avaliação Escrita <span>(Opcional)</span>
+            </label>
+            <textarea id="avaliacao" name="avaliacao" rows="5"></textarea>
+
+            <label for="nome">
+                Seu Nome <span>(Opcional)</span>
+            </label>
+            <input type="text" id="nome" name="nome">
+
+            <input type="submit" value="Publicar Avaliação">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌸 Leticia Silva 🌸 Brasil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
